@@ -2,49 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Game</title>
+    <title>Bubble Popping</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<section id="c">
-<!---------------------------------------------------------------------------->
-<div class="first_page">
-    <div class="score">
-        <div class="score_lbl"></div>
-        <div class="count_lbl"></div>
-    </div>
 
-    <div class="pause_btn"></div><div></div>
-    <div class="slowmo">
-        <div class="slowmo_bar"></div>
+<div class="bubble bubble-one"></div>
+<div class="score-board">
+    <p>You Popped <span class="score">0</span>Bubbles</p>
+</div>
+
+<div class="shadow">
+    <div class="total-score">
+        <div class="wrapper winner">
+            <h4>Congratulations</h4>
+            <h4>You Popped all 50 Bubbles</h4>
+            <p>You are a winner</p>
+        </div>
+        <div class="wrapper loser">
+            <h4>Sorry</h4>
+            <h4>You Popped <span class="score">0</span>Bubbles</h4>
+        </div>
     </div>
 </div>
-<!----------------------------------------------------------------------------->
 
-<div class="second">
-    <div class="menu menu_main">
-        <h1>Milasha</h1>
-        <button type="button" class="play_btn">PLAY GAME</button>
-        <button type="button" class="play_btn2">CASUAL MODE</button>
-    </div>
+<script src="jQuery/jquery-3.6.0.min.js"></script>
+<script>
 
-    <div class=" menu menu_pause">
-        <h1>Paused</h1>
-        <button type="button" class="resume_btn">RESUME GAME</button>
-        <button type="button" class="main_menu_btn">MAIN MENU</button>
-    </div>
-
-    <div class="menu menu_score">
-        <h1>GAME OVER</h1>
-        <h2>Your Score :</h2>
-        <div class="final_score_lbl"></div>
-        <div class="high_score_lbl"></div>
-        <button type="button" class="play_again_btn">PLAY AGAIN</button>
-        <button type="button" class="menu_pause_btn">MAIN MENU</button>
-    </div>
-</div>
-</section>
-
+</script>
 </body>
 </html>
