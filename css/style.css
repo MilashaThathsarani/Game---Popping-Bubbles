@@ -149,3 +149,55 @@ body{
     transition-duration: 0.45s;
     transition-timing-function: ease-out;
 }
+
+.second.interactive-mode.menu.active{
+    opacity: 0.6;
+}
+
+.second:not(.interactive-mode).menu.active>{
+    pointer-events:auto ;
+}
+
+
+h1{
+    font-size: 4rem;
+    line-height: 0.95;
+    text-align: center;
+    font-weight: bold;
+    margin: -1em 0.65em 1em;
+}
+
+h2{
+    font-size: 1.2rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    margin: -1em 0.65em 1em;
+}
+
+.final_score_lbl{
+    font-size: 5rem;
+    margin: -0.2em 0 0;
+}
+
+.high_score_lbl{
+    font-size: 1.2rem;
+    margin: 0 0 2.5em;
+}
+
+button{
+    display: block;
+    position: relative;
+    width: 200px;
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    user-select:none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
