@@ -24,3 +24,24 @@ body {
     inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
     inset 15px -25px 20px purple;
 }
+
+.bubble-two{
+    box-shadow: inset 0 0 10px white, inset -10px 10px 15px #020131,
+    inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
+    inset 15px -25px 20px purple;
+}
+.bubble-three{
+    box-shadow: inset 0 0 10px white, inset -10px 10px 15px #020131,
+    inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
+    inset 15px -25px 20px purple;
+}
+.bubble-four{
+    box-shadow: inset 0 0 10px white, inset -10px 10px 15px #020131,
+    inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
+    inset 15px -25px 20px purple;
+}
+.bubble-five{
+    box-shadow: inset 0 0 10px white, inset -10px 10px 15px #020131,
+    inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
+    inset 15px -25px 20px purple;
+}
