@@ -56,5 +56,24 @@ body {
     position: absolute;
     bottom: 0;
     left:calc(50% - 150px);
+}
+.loser{
+    display: none;
+}
 
+.winner{
+    display: none;
+}
+
+.main-game>h2{
+    color: white;
+}
+
+.main-game{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
 }
