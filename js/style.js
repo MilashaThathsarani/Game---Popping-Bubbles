@@ -40,7 +40,13 @@ function animateBubble(element) {
     }
 }
 
-function deleteBubble() {
-
+function deleteBubble(element) {
+    element.remove();
 }
+document.addEventListener('click',function (event) {
+    if (event.target.classList.contains('bubble')){
+        deleteBubble(event.target);
+    }
+
+})
 
