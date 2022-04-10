@@ -87,5 +87,15 @@ button.start-btn{
     height: 30px;
     width: 5%;
     margin: 8px auto;
+}
 
+.shadow{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
 }
