@@ -15,8 +15,16 @@ function createBubble(){
     let rand = Math.floor(Math.random() * bubbles.length);
     div.className = 'bubble bubble-'+ bubbles[rand];
     rand = Math.floor(Math.random() * (windowWidth - 150));
+    div.style.left = rand + 'px';
 
     document.body.appendChild(div);
 
+    animateBubble(div);
+}
+
+function animateBubble(element) {
+    let position = 0;
+    let random = Math.floor(Math.random() * 6 - 3);
+    let interval = setInterval(frame,12 - Math.floor(noPop / 10) + random);
 }
 
