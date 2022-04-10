@@ -26,5 +26,21 @@ function animateBubble(element) {
     let position = 0;
     let random = Math.floor(Math.random() * 6 - 3);
     let interval = setInterval(frame,12 - Math.floor(noPop / 10) + random);
+
+    function frame() {
+        if(position >=(windowHeight + 150)&&
+            (document.querySelector('[data-number ="'+ element.dataset.number +'"]')
+            !==null)){
+            clearInterval(interval);
+        }
+        else{
+            position++;
+            element.style.top = windowHeight = position + 'px';
+        }
+    }
+}
+
+function deleteBubble() {
+
 }
 
