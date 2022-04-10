@@ -77,3 +77,15 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+button.start-btn{
+    font-size: 20px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 30px;
+    width: 5%;
+    margin: 8px auto;
+
+}
