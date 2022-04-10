@@ -13,6 +13,28 @@ body{
 }
 /*---------------------------------------------------------*/
 
+.score,
+.pause_btn{
+    position: fixed;
+    font-size: 14px;
+}
 
+.score{
+    top: 0.65em;
+    left: 0.65em;
+    pointer-events: none;
+    user-select: none;
+}
+
+.count_lbl{
+    font-size: 0.46em;
+}
+
+.pause_btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.8em 0.65em;
+}
 
 
