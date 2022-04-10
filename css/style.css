@@ -45,3 +45,16 @@ body {
     inset 5px 5px 10px darkred, inset -5px 5px 20px white ,
     inset 15px -25px 20px purple;
 }
+.score-board {
+    background: white;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
+    left:calc(50% - 150px);
+
+}
