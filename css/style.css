@@ -3,7 +3,12 @@ body{
     font-family: monospace;
     font-weight: bold;
     letter-spacing: 0.06em;
-    /*color: rgba(255,255,255,0.75);*/
+    width: 100%;
+    height: 704px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("../images/KaLvXw-1280.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
 }
 #c{
@@ -37,4 +42,18 @@ body{
     padding: 0.8em 0.65em;
 }
 
+.pause_btn>div{
+    position: relative;
+    width: 0.8em;
+    height: 0.8em;
+    opacity: 0.75;
+}
 
+.pause_btn> div::before,
+.pause_btn> div::after{
+    content: '';
+    display: block;
+    width: 34%;
+    height: 100%;
+    background-color: #ffffff;
+}
