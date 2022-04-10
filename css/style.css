@@ -116,7 +116,11 @@ body{
     transition-timing-function: ease-out;
 }
 
-.second{
+.second.interactive-mode::before{
+    opacity: 0.02;
+}
+
+.menu{
     pointer-events: none;
     position: fixed;
     top: 0;
@@ -136,4 +140,12 @@ body{
     transition-property: opacity,visibility,transform;
     transition: 0.2s;
     transition-timing-function: ease-in;
+}
+
+.menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-duration: 0.45s;
+    transition-timing-function: ease-out;
 }
