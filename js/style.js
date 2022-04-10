@@ -10,3 +10,13 @@ let gameOver = false;
 let shadow = document.querySelector('.shadow');
 let startBtn = document.querySelector('.start-btn');
 
+function createBubble(){
+    let div = document.createElement('div')
+    let rand = Math.floor(Math.random() * bubbles.length);
+    div.className = 'bubble bubble-'+ bubbles[rand];
+    rand = Math.floor(Math.random() * (windowWidth - 150));
+
+    document.body.appendChild(div);
+
+}
+
