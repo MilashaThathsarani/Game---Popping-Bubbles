@@ -1,8 +1,18 @@
-
 body{
-}
+    margin: 0;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    /*color: rgba(255,255,255,0.75);*/
 
-body>h1{
-    color: white;
-    font-size: 30px;
 }
+#c{
+    display: block;
+    touch-action: none;
+    transform: translate(0);
+}
+/*---------------------------------------------------------*/
+
+
+
+
