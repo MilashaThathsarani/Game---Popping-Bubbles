@@ -158,7 +158,6 @@ body{
     pointer-events:auto ;
 }
 
-
 h1{
     font-size: 4rem;
     line-height: 0.95;
@@ -214,4 +213,24 @@ button::before{
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
 }
+
+button:active{
+    opacity: 1;
+}
+ button:active::before{
+     transform: scale(1,1);
+     opacity: 1;
+ }
+
+ @media (min-width: 1025px) {
+     button:hover{
+         opacity: 1;
+     }
+ }
+
+button:hover::before{
+    transform: scale(1,1);
+    opacity: 1;
+}
+
 
