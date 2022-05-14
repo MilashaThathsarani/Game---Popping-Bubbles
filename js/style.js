@@ -74,9 +74,37 @@ function startGame(){
         }
     }, 800 + timeout);
 }
+
+function restartGame(){
+    let forRemoving = document.querySelectorAll('.bubble');
+    for (let i = 0; i < forRemoving.length; i++){
+        gameOver = false;
+        noPop = 0;
+        scoreUpdate();
+    }
+}
 document.addEventListener('click',function (event) {
     if (event.target.classList.contains('bubble')){
         deleteBubble(event.target);
     }
 })
+
+document.querySelector('.restart').addEventListner('click',
+    function () {
+    shadow.style.display = 'none';
+    shadow.querySelector('.winner').style.display = 'none';
+    shadow.querySelector('.loser').style.display = 'none';
+    startGame();
+    });
+document.querySelector('.cancel').addEventListner('.click',
+    function () {
+    shadow.style.display = 'none';
+});
+startBtn.addEventListener('click',function () {
+    startGame();
+    document.querySelector('.main-game').style.display =
+        'none';
+
+})
+
 
