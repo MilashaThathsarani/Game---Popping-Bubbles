@@ -42,11 +42,41 @@ function animateBubble(element) {
 
 function deleteBubble(element) {
     element.remove();
+    noPop++;
+    scoreUpdate();
+}
+
+function scoreUpdate(){
+    for (let i = 0; i < scores.length; i++){
+        scores[i].textContent = noPop;
+    }
+}
+
+
+function startGame(){
+    restartGame();
+    let timeout = 0;
+    let loop = setInterval(function () {
+        timeout = math.floor(Math.random() * 600 - 100);
+        if (!gameOver && noPop !==total){
+            createBubble();
+        }
+        else if (noPop !==total) {
+            clearInterval(loop);
+            shadow.style.display = 'flex';
+            shadow.querySelector('.loser').style.display = 'block';
+        }
+        else{
+            clearInterval(loop);
+            shadow.style.display='flex';
+            shadow.querySelector('.winner').style.display = 'block';
+
+        }
+    }, 800 + timeout);
 }
 document.addEventListener('click',function (event) {
     if (event.target.classList.contains('bubble')){
         deleteBubble(event.target);
     }
-
 })
 
