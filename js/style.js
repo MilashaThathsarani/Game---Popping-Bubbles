@@ -106,8 +106,7 @@ document.querySelector('.cancel').addEventListener('click',
 });
 startBtn.addEventListener('click',function () {
     startGame();
-    document.querySelector('.main-game').style.display =
-        'none';
+    document.querySelector('.main-game').style.display = 'none';
 });
 
 
