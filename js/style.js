@@ -17,7 +17,7 @@ function createBubble(){
     rand = Math.floor(Math.random() * (windowWidth - 150));
     div.style.left = rand + 'px';
 
-    document.body.appendChild(div);
+    //document.body.appendChild(div);
 
     animateBubble(div);
 }
@@ -57,7 +57,7 @@ function startGame(){
     restartGame();
     let timeout = 0;
     let loop = setInterval(function () {
-        timeout = math.floor(Math.random() * 600 - 100);
+        timeout = Math.floor(Math.random() * 600 - 100);
         if (!gameOver && noPop !==total){
             createBubble();
         }
@@ -96,7 +96,7 @@ document.querySelector('.restart').addEventListner('click',
     shadow.querySelector('.loser').style.display = 'none';
     startGame();
     });
-document.querySelector('.cancel').addEventListner('.click',
+document.querySelector('.cancel').addEventListner('click',
     function () {
     shadow.style.display = 'none';
 });
@@ -104,7 +104,6 @@ startBtn.addEventListener('click',function () {
     startGame();
     document.querySelector('.main-game').style.display =
         'none';
-
-})
+});
 
 
