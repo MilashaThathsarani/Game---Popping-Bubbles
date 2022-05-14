@@ -4,7 +4,7 @@ let body = document.body;
 let windowHeight = window.innerHeight;
 let scores = document.querySelectorAll('.score');
 let noPop = 0;
-let total = 30;
+let total = 50;
 let currentBubble = 0;
 let gameOver = false;
 let shadow = document.querySelector('.shadow');
@@ -17,7 +17,10 @@ function createBubble(){
     rand = Math.floor(Math.random() * (windowWidth - 150));
     div.style.left = rand + 'px';
 
-    //document.body.appendChild(div);
+    div.dataset.number = currentBubble;
+    currentBubble++;
+
+    document.body.appendChild(div);
 
     animateBubble(div);
 }
@@ -29,9 +32,10 @@ function animateBubble(element) {
 
     function frame() {
         if(position >=(windowHeight + 150)&&
-            (document.querySelector('[data-number ="'+ element.dataset.number +'"]')
-            !==null)){
+            (document.querySelector('[data-number ="'+ element.dataset.number + '"]')
+                !==null)){
             clearInterval(interval);
+            gameOver = true;
         }
         else{
             position++;
@@ -89,14 +93,14 @@ document.addEventListener('click',function (event) {
     }
 })
 
-document.querySelector('.restart').addEventListner('click',
+document.querySelector('.restart').addEventListener('click',
     function () {
     shadow.style.display = 'none';
     shadow.querySelector('.winner').style.display = 'none';
     shadow.querySelector('.loser').style.display = 'none';
     startGame();
     });
-document.querySelector('.cancel').addEventListner('click',
+document.querySelector('.cancel').addEventListener('click',
     function () {
     shadow.style.display = 'none';
 });
